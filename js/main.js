@@ -1,31 +1,22 @@
-const headerEl = document.querySelector('.header');
-
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', addActive);
 const headerBox = document.querySelector('.header__box');
 
+const wholeHTML = document.querySelector('html');
 const wholeBody = document.querySelector('body');
 
-function addShadowToHeader() {
-	var scroll = window.pageYOffset;
-	console.log(scroll);
-	if (scroll > 0) {
-		headerEl.classList.add('_scrolled');
-	}
-	else {
-		headerEl.classList.remove('_scrolled');
-	};
-};
 
 function addActive() {
 	this.classList.toggle('_active');
 	headerBox.classList.toggle('_active');
+	wholeHTML.classList.toggle('_lock');
 	wholeBody.classList.toggle('_lock');
 };
 
 function removeActive() {
 	burger.classList.remove('_active');
 	headerBox.classList.remove('_active');
+	wholeHTML.classList.remove('_lock');
 	wholeBody.classList.remove('_lock');
 }
 
@@ -61,5 +52,3 @@ function doScrollGallery() {
 		behavior: 'smooth',
 	});
 };
-
-document.addEventListener('scroll', addShadowToHeader);
