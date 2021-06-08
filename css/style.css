@@ -672,6 +672,7 @@ html._lock, body._lock {
   .gallery__grid {
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(3, 300px);
+    margin-bottom: 44px;
   }
 }
 
@@ -731,7 +732,7 @@ html._lock, body._lock {
 
 @media (max-width: 1200px) {
   .footer {
-    padding: 40px 0;
+    padding: 60px 0 40px 0;
   }
 }
 
@@ -876,6 +877,7 @@ html._lock, body._lock {
 @media (max-width: 1200px) {
   .text {
     text-align: center;
+    font-size: 20px;
     line-height: 130%;
   }
 }

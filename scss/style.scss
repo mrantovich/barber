@@ -581,7 +581,8 @@ html, body {
 
 		@media (max-width: 1067px) {
 			grid-template-columns: repeat(2, 300px);
-			grid-template-rows: repeat(3, 300px)
+			grid-template-rows: repeat(3, 300px);
+			margin-bottom: 44px;
 		}
 
 		@media (max-width: 678px) {
@@ -640,7 +641,7 @@ html, body {
 	padding: 140px 0;
 
 	@media (max-width: 1200px) {
-		padding: 40px 0;
+		padding: 60px 0 40px 0;
 	}
 
 	&__box {
@@ -779,6 +780,7 @@ html, body {
 
 	@media (max-width: 1200px) {
 		text-align: center;
+		font-size: 20px;
 		line-height: 130%;
 	}
 }
