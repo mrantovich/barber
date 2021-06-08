@@ -343,6 +343,12 @@ html._lock, body._lock {
   padding: 50px 0 50px 0;
 }
 
+@media (max-width: 1200px) {
+  .hero {
+    padding: 0;
+  }
+}
+
 .hero__box {
   display: flex;
   width: 120%;
@@ -401,7 +407,7 @@ html._lock, body._lock {
 @media (max-width: 1200px) {
   .hero__img {
     order: 1;
-    height: 400px;
+    height: 300px;
     width: auto;
   }
   .hero__img img {
@@ -414,6 +420,12 @@ html._lock, body._lock {
 
 .history {
   padding: 170px 0 50px 0;
+}
+
+@media (max-width: 1200px) {
+  .history {
+    padding: 15px 0;
+  }
 }
 
 .history__box {
@@ -503,7 +515,7 @@ html._lock, body._lock {
 
 @media (max-width: 1200px) {
   .services {
-    padding: 60px 0;
+    padding: 60px 0 30px 0;
   }
 }
 
@@ -715,6 +727,12 @@ html._lock, body._lock {
 
 .footer {
   padding: 140px 0;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 40px 0;
+  }
 }
 
 .footer__box {
