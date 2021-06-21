@@ -52,3 +52,33 @@ function doScrollGallery() {
 		behavior: 'smooth',
 	});
 };
+
+const historyImage = document.querySelector('.history__img');
+const historyBody = document.querySelector('.history__body');
+const galleryGrid = document.querySelector('.gallery__grid');
+const heroBody = document.querySelector('.hero__body');
+const heroImage = document.querySelector('.hero__img');
+
+function doAnimateOnScroll() {
+	let historyTop = historyArea.offsetTop;
+	let galleryTop = galleryArea.offsetTop;
+	let currentOffset = window.scrollY;
+
+	if (currentOffset >= historyTop / 1.2) {
+		historyImage.classList.add('_show-me');
+		historyBody.classList.add('_show-me');
+	};
+
+	if (currentOffset >= galleryTop / 1.1) {
+		galleryGrid.classList.add('_show-me');
+	}
+};
+
+function doAnimateHero() {
+	heroBody.classList.add('_show-me');
+	heroImage.classList.add('_show-me');
+};
+
+
+window.addEventListener('scroll', doAnimateOnScroll);
+window.addEventListener('load', doAnimateHero);
